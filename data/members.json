@@ -1,0 +1,9 @@
+[ {
+  "id" : "1",
+  "password" : "$2a$10$zgm9mVy28V6ZKrMniojNiuXtNbb2jANwXlkPo0wRYbHroWdnnAH3e",
+  "publicKey" : "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAETTfDeono7LYTkNoB3RRLG9fEVI0Rttrmeie83QRGcU50ZC5JvKigdTaGYt1VwmN06XNAHmpPb0Ei5JsB1B7hDg=="
+}, {
+  "id" : "2",
+  "password" : "$2a$10$J4A.lPe5IF4hoHlTJYbDReqQX/UkUnDJphzOE3eOCCdNvDqKk5PiC",
+  "publicKey" : "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEmnOYaDmsL9e8YsSYLE1xBiJCcVDpAorSDzQ6eY1UrZPl2x+zSXviGzcXl0Ql4cjjR8ii17D0Rat0Odxd0soBgg=="
+} ]

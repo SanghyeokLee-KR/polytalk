@@ -1,0 +1,391 @@
+2026-05-03 22:12:20 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:12:26 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:12:33 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:12:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-03 22:12:54 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:13:56 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:13:58 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-03 22:14:02 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:14:04 INFO  [pool-1-thread-1] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-03 22:14:05 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:14:08 INFO  [pool-1-thread-2] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 1
+2026-05-03 22:14:11 INFO  [pool-1-thread-3] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 2
+2026-05-03 22:14:19 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 생성 완료. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, roomName=1, owner=1
+2026-05-03 22:14:19 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1, logCount=0
+2026-05-03 22:15:12 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=2, roomCount=1
+2026-05-03 22:15:14 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=2, memberCount=2
+2026-05-03 22:15:14 INFO  [pool-1-thread-3] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=2
+2026-05-03 22:15:14 INFO  [pool-1-thread-3] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=2
+2026-05-03 22:15:14 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=2, logCount=0
+2026-05-03 22:15:19 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, sender=1, data=RVdNlAQ4jbMIzqyC:sQ6pJeSkp5gjCrFdrcxNfNKRigoffg==
+2026-05-03 22:15:21 INFO  [pool-1-thread-3] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, sender=2, data=lW/Oy/I3YCNFUarG:Q2qsG0u+xFYrEX6mKRvf5qdvfChzUA==
+2026-05-03 22:18:11 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:18:13 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:18:14 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-03 22:18:19 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-03 22:18:20 INFO  [pool-1-thread-1] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-03 22:18:20 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-03 22:18:22 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:21:13 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=1
+2026-05-03 22:21:13 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 로그인 성공. userId=1
+2026-05-03 22:21:16 INFO  [pool-1-thread-3] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=2
+2026-05-03 22:21:16 INFO  [pool-1-thread-3] c.p.server.service.ServerAuthService - 로그인 성공. userId=2
+2026-05-03 22:22:54 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=1, roomCount=1
+2026-05-03 22:22:56 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1, memberCount=2
+2026-05-03 22:22:56 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1
+2026-05-03 22:22:56 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, fromUser=2, toUser=1
+2026-05-03 22:22:56 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1
+2026-05-03 22:22:56 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1
+2026-05-03 22:22:56 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1, logCount=2
+2026-05-03 22:23:00 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, sender=1, data=sUuSLF+4yAtMROfE:X4u4y83rOTGEForAY/KQZo8QgQe76/NyfWk1SbiPOA==
+2026-05-03 22:23:01 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, sender=1, data=vNz8ki+konhZRria:VhE/hgKquPvnAPeINE/LddU=
+2026-05-03 22:23:03 INFO  [pool-1-thread-2] c.p.s.repository.ChatLogRepository - 방 폭파로 대화내역 삭제 완료. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9
+2026-05-03 22:23:03 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 폭파 완료. roomId=3cd4b4a2-d73f-4a58-84fb-82ddbc65b6d9, userId=1
+2026-05-03 22:23:06 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 생성 완료. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, roomName=1, owner=1
+2026-05-03 22:23:06 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=1, logCount=0
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=2, roomCount=1
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2, memberCount=2
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, fromUser=1, toUser=2
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2
+2026-05-03 22:23:11 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2, logCount=0
+2026-05-03 22:23:15 INFO  [pool-1-thread-3] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=2, data=LZ/WPyEG2uqgw4zi:pZGcptXh11/uSFiDEqtE/8+Zy481Dw==
+2026-05-03 22:23:17 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=1, data=fyYxiFZxuTxSE65s:RBd7iqDzI7E4ozkJg8FOrd4/bujJ5Q==
+2026-05-03 22:23:19 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=1, data=NdwQ7fahD9x2kSqe:pyNuCr6LVM5qaNkLkACYBf+kUSGI4g==
+2026-05-03 22:28:24 INFO  [pool-1-thread-2] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-03 22:28:25 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:28:26 INFO  [pool-1-thread-4] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-03 22:28:27 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:28:29 INFO  [pool-1-thread-5] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=1
+2026-05-03 22:28:29 INFO  [pool-1-thread-5] c.p.server.service.ServerAuthService - 로그인 성공. userId=1
+2026-05-03 22:28:32 INFO  [pool-1-thread-3] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-03 22:28:32 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-03 22:28:34 INFO  [pool-1-thread-6] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=2
+2026-05-03 22:28:34 INFO  [pool-1-thread-6] c.p.server.service.ServerAuthService - 로그인 성공. userId=2
+2026-05-03 22:28:42 INFO  [pool-1-thread-5] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=1, roomCount=1
+2026-05-03 22:28:44 INFO  [pool-1-thread-5] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=1, memberCount=2
+2026-05-03 22:28:44 INFO  [pool-1-thread-5] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=1
+2026-05-03 22:28:44 INFO  [pool-1-thread-5] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, fromUser=2, toUser=1
+2026-05-03 22:28:44 INFO  [pool-1-thread-5] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=1
+2026-05-03 22:28:44 INFO  [pool-1-thread-5] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=1
+2026-05-03 22:28:44 INFO  [pool-1-thread-5] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=1, logCount=3
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=2, roomCount=1
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2, memberCount=2
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, fromUser=1, toUser=2
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2
+2026-05-03 22:28:46 INFO  [pool-1-thread-6] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, userId=2, logCount=3
+2026-05-03 22:28:47 INFO  [pool-1-thread-6] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=2, data=KOZ6pca1JGBLC9uG:aXZbWehO+4bcU0Yb7vwYsedaGIL8WQ==
+2026-05-03 22:28:50 INFO  [pool-1-thread-5] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=1, data=XruLiAiuHeqQ1uNS:vN4gV/r0a2uLASGZG+VmXg6K5SVx9Q==
+2026-05-03 22:28:52 INFO  [pool-1-thread-5] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=1, data=MrQeHcaIVu0ydL/S:7m4X1O9U6ihjwWd6RYdhx28vV4+B5g==
+2026-05-03 22:28:52 INFO  [pool-1-thread-5] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=d2e512b8-8b7d-4bf9-93b5-bdf042e3f41b, sender=1, data=ivRTI8rNCg2LLomF:iG72wWrZoZAISr323HOcXNjca5XSFQ==
+2026-05-03 23:04:59 INFO  [Test worker] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=room-test, sender=userA, data=encrypted-data
+2026-05-03 23:04:59 INFO  [Test worker] c.p.s.repository.ChatLogRepository - 방 폭파로 대화내역 삭제 완료. roomId=room-test
+2026-05-04 08:58:22 INFO  [Test worker] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=room-test, sender=userA, data=encrypted-data
+2026-05-04 08:58:22 INFO  [Test worker] c.p.s.repository.ChatLogRepository - 방 폭파로 대화내역 삭제 완료. roomId=room-test
+2026-05-04 08:59:53 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 09:00:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:00:59 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:01:06 WARN  [main] c.p.client.service.ClientAuthService - 로그인 실패 - 클라이언트 키쌍 없음. userId=1
+2026-05-04 09:01:13 INFO  [pool-1-thread-1] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 이상혁
+2026-05-04 09:01:13 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 회원가입 처리. userId=이상혁, result=true
+2026-05-04 09:01:13 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=이상혁, success=true
+2026-05-04 09:01:18 INFO  [pool-1-thread-2] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 김민혁
+2026-05-04 09:01:18 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 회원가입 처리. userId=김민혁, result=true
+2026-05-04 09:01:18 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=김민혁, success=true
+2026-05-04 09:01:22 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=김민혁
+2026-05-04 09:01:22 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 로그인 성공. userId=김민혁
+2026-05-04 09:01:22 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=김민혁
+2026-05-04 09:01:22 INFO  [main] c.p.c.service.ClientHandshakeService - Cipher Suite 협상 요청 전송. userId=김민혁, supported=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:22 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - Cipher Suite 협상 완료. userId=김민혁, selected=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:22 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - 서버 ECDH shared secret 생성 완료. 구조=S_PRI + C_PUB, userId=김민혁
+2026-05-04 09:01:22 INFO  [main] c.p.c.service.ClientHandshakeService - 클라이언트 ECDH shared secret 생성 완료. 구조=C_PRI + S_PUB, userId=김민혁
+2026-05-04 09:01:22 INFO  [main] c.p.c.service.ClientHandshakeService - SEED 생성 완료. userId=김민혁
+2026-05-04 09:01:23 INFO  [main] c.p.c.service.ClientHandshakeService - E(SEED) 전송 완료. userId=김민혁
+2026-05-04 09:01:23 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - SEED 복호화 완료. userId=김민혁
+2026-05-04 09:01:23 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - SecretKey 유도 완료. userId=김민혁, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 09:01:23 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=김민혁, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:23 INFO  [main] c.p.c.service.ClientHandshakeService - SecretKey 유도 완료. userId=김민혁, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 09:01:23 INFO  [main] c.p.c.service.ClientHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=김민혁, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=이상혁
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 로그인 성공. userId=이상혁
+2026-05-04 09:01:33 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=이상혁
+2026-05-04 09:01:33 INFO  [main] c.p.c.service.ClientHandshakeService - Cipher Suite 협상 요청 전송. userId=이상혁, supported=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - Cipher Suite 협상 완료. userId=이상혁, selected=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - 서버 ECDH shared secret 생성 완료. 구조=S_PRI + C_PUB, userId=이상혁
+2026-05-04 09:01:33 INFO  [main] c.p.c.service.ClientHandshakeService - 클라이언트 ECDH shared secret 생성 완료. 구조=C_PRI + S_PUB, userId=이상혁
+2026-05-04 09:01:33 INFO  [main] c.p.c.service.ClientHandshakeService - SEED 생성 완료. userId=이상혁
+2026-05-04 09:01:33 INFO  [main] c.p.c.service.ClientHandshakeService - E(SEED) 전송 완료. userId=이상혁
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - SEED 복호화 완료. userId=이상혁
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - SecretKey 유도 완료. userId=이상혁, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 09:01:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=이상혁, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:01:33 INFO  [main] c.p.c.service.ClientHandshakeService - SecretKey 유도 완료. userId=이상혁, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 09:01:33 INFO  [main] c.p.c.service.ClientHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=이상혁, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 09:10:50 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.RoomConsoleUI.printRoomMenu(RoomConsoleUI.java:24)
+	at com.polytalk.client.controller.RoomFlowController.run(RoomFlowController.java:32)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:80)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-04 09:10:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:10:50 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-04 09:10:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:10:50 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-04 09:10:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:10:50 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-04 09:10:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:10:50 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-04 09:10:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:10:50 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-04 09:10:50 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 09:10:50 INFO  [pool-1-thread-8] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.RoomConsoleUI.printRoomMenu(RoomConsoleUI.java:24)
+	at com.polytalk.client.controller.RoomFlowController.run(RoomFlowController.java:32)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:80)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 09:10:51 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:74)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-04 09:10:51 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 12:13:59 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 12:14:14 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-04 12:14:16 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 12:14:23 WARN  [main] c.p.client.service.ClientAuthService - 로그인 실패 - 클라이언트 키쌍 없음. userId=dltkdgur
+2026-05-04 12:14:29 INFO  [pool-1-thread-1] c.p.s.repository.MemberRepository - 회원정보 저장 완료: dltkdgur
+2026-05-04 12:14:29 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 회원가입 처리. userId=dltkdgur, result=true
+2026-05-04 12:14:29 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=dltkdgur, success=true
+2026-05-04 12:14:32 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=dltkdgur
+2026-05-04 12:14:32 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 로그인 성공. userId=dltkdgur
+2026-05-04 12:14:32 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=dltkdgur
+2026-05-04 12:14:32 INFO  [main] c.p.c.service.ClientHandshakeService - Cipher Suite 협상 요청 전송. userId=dltkdgur, supported=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - Cipher Suite 협상 완료. userId=dltkdgur, selected=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - 서버 ECDH shared secret 생성 완료. 구조=S_PRI + C_PUB, userId=dltkdgur
+2026-05-04 12:14:33 INFO  [main] c.p.c.service.ClientHandshakeService - 클라이언트 ECDH shared secret 생성 완료. 구조=C_PRI + S_PUB, userId=dltkdgur
+2026-05-04 12:14:33 INFO  [main] c.p.c.service.ClientHandshakeService - SEED 생성 완료. userId=dltkdgur
+2026-05-04 12:14:33 INFO  [main] c.p.c.service.ClientHandshakeService - E(SEED) 전송 완료. userId=dltkdgur
+2026-05-04 12:14:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - SEED 복호화 완료. userId=dltkdgur
+2026-05-04 12:14:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - SecretKey 유도 완료. userId=dltkdgur, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 12:14:33 INFO  [main] c.p.c.service.ClientHandshakeService - SecretKey 유도 완료. userId=dltkdgur, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 12:14:33 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=dltkdgur, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:33 INFO  [main] c.p.c.service.ClientHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=dltkdgur, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:37 INFO  [pool-1-thread-2] c.p.s.repository.MemberRepository - 회원정보 저장 완료: rlaalsgur
+2026-05-04 12:14:37 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 회원가입 처리. userId=rlaalsgur, result=true
+2026-05-04 12:14:37 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=rlaalsgur, success=true
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 로그인 성공. userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [main] c.p.c.service.ClientHandshakeService - Cipher Suite 협상 요청 전송. userId=rlaalsgur, supported=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - Cipher Suite 협상 완료. userId=rlaalsgur, selected=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - 서버 ECDH shared secret 생성 완료. 구조=S_PRI + C_PUB, userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [main] c.p.c.service.ClientHandshakeService - 클라이언트 ECDH shared secret 생성 완료. 구조=C_PRI + S_PUB, userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [main] c.p.c.service.ClientHandshakeService - SEED 생성 완료. userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [main] c.p.c.service.ClientHandshakeService - E(SEED) 전송 완료. userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - SEED 복호화 완료. userId=rlaalsgur
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - SecretKey 유도 완료. userId=rlaalsgur, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 12:14:42 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=rlaalsgur, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:42 INFO  [main] c.p.c.service.ClientHandshakeService - SecretKey 유도 완료. userId=rlaalsgur, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 12:14:42 INFO  [main] c.p.c.service.ClientHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=rlaalsgur, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 12:14:59 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=dltkdgur, roomCount=0
+2026-05-04 12:15:02 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=dltkdgur, roomCount=0
+2026-05-04 12:15:07 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 생성 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, roomName=이상혁, owner=dltkdgur
+2026-05-04 12:15:07 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur, logCount=0
+2026-05-04 12:15:10 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=rlaalsgur, roomCount=1
+2026-05-04 12:15:13 WARN  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 입장 실패 - 비밀번호 불일치. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur
+2026-05-04 12:15:15 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=rlaalsgur, roomCount=1
+2026-05-04 12:15:17 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur, memberCount=2
+2026-05-04 12:15:17 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur
+2026-05-04 12:15:17 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, fromUser=dltkdgur, toUser=rlaalsgur
+2026-05-04 12:15:17 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur
+2026-05-04 12:15:17 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur
+2026-05-04 12:15:17 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur, logCount=0
+2026-05-04 12:15:22 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=hgO6p32S5ahDYb0A:Zvqgpb7ZYikSAD6Mv2P6FQ==
+2026-05-04 12:15:30 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=rlaalsgur, data=Ix+VnmVL0eNB6k6A:gUVmxDPkbo3eHEf7KIylUmuo2OtkzLnMz/53BBpmKw==
+2026-05-04 12:15:35 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=oIZvcQ3Mogl5eO6V:EwDAVSS2P2ik/4mm8AHF6854VvU/E+LKWBNsf6QDTA==
+2026-05-04 12:15:37 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=PEmAafWhfLUAn/sC:2I/HHSaPr5q/pUMkhEihno9eCcZ0+sMarl9p2yqujNMGRA==
+2026-05-04 12:15:40 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=rlaalsgur, data=dvdfaea7MbRKkUxL:UX6iz14vvGzCJKw4Xrsz5OMcvN0dkxG5NA==
+2026-05-04 13:16:30 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=J+LmovA04CXxN1aA:4z2cS8ijApg2OyNyenHapCs1TBMyzxJucA==
+2026-05-04 13:16:33 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=rlaalsgur, data=1SobOJFnsx17DwB4:hoR6AXXe5G2ksEFoLN9Fbua0Raf2JUWC3Pg2VzBFS72efQ==
+2026-05-04 13:16:35 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=rlaalsgur, data=6jA8LTv4j/fE1ztO:AQlD9nmusw9vX1W4Yjxj+LG9xS012F7G05zpPlBMoPy3Bw==
+2026-05-04 13:16:40 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=rlaalsgur, data=d/lwQkmM/Bd35a1l:5NxNWAhYc1ESFQ/3GL/S52yfvnRxG6zrPpJpMN7ttBxC3Zinqsg=
+2026-05-04 13:16:43 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=Xg/2wNrgtA7feSw0:7N41GqNgGLLpdXx9tSX2zy7wSn0oIyVsR4IPwg==
+2026-05-04 13:31:49 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 나가기 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur, memberCount=1
+2026-05-04 13:31:54 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 나가기 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=rlaalsgur, memberCount=0
+2026-05-04 13:31:57 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=rlaalsgur, roomCount=1
+2026-05-04 13:31:59 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 공개키 제거 완료. userId=rlaalsgur
+2026-05-04 13:31:59 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 로그아웃 처리. userId=rlaalsgur
+2026-05-04 13:31:59 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - 핸드셰이크 세션 제거 완료. userId=rlaalsgur
+2026-05-04 13:31:59 INFO  [pool-1-thread-2] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-04 13:31:59 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 13:32:02 INFO  [pool-1-thread-3] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 3
+2026-05-04 13:32:02 INFO  [pool-1-thread-3] c.p.server.service.ServerAuthService - 회원가입 처리. userId=3, result=true
+2026-05-04 13:32:02 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=3, success=true
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=3
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.server.service.ServerAuthService - 로그인 성공. userId=3
+2026-05-04 13:32:04 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=3
+2026-05-04 13:32:04 INFO  [main] c.p.c.service.ClientHandshakeService - Cipher Suite 협상 요청 전송. userId=3, supported=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.s.service.ServerHandshakeService - Cipher Suite 협상 완료. userId=3, selected=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.s.service.ServerHandshakeService - 서버 ECDH shared secret 생성 완료. 구조=S_PRI + C_PUB, userId=3
+2026-05-04 13:32:04 INFO  [main] c.p.c.service.ClientHandshakeService - 클라이언트 ECDH shared secret 생성 완료. 구조=C_PRI + S_PUB, userId=3
+2026-05-04 13:32:04 INFO  [main] c.p.c.service.ClientHandshakeService - SEED 생성 완료. userId=3
+2026-05-04 13:32:04 INFO  [main] c.p.c.service.ClientHandshakeService - E(SEED) 전송 완료. userId=3
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.s.service.ServerHandshakeService - SEED 복호화 완료. userId=3
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.s.service.ServerHandshakeService - SecretKey 유도 완료. userId=3, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 13:32:04 INFO  [pool-1-thread-3] c.p.s.service.ServerHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=3, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:04 INFO  [main] c.p.c.service.ClientHandshakeService - SecretKey 유도 완료. userId=3, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 13:32:04 INFO  [main] c.p.c.service.ClientHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=3, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:05 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=3, roomCount=1
+2026-05-04 13:32:08 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=3, memberCount=1
+2026-05-04 13:32:08 INFO  [pool-1-thread-3] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=3
+2026-05-04 13:32:08 INFO  [pool-1-thread-3] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=3
+2026-05-04 13:32:08 INFO  [pool-1-thread-3] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=3
+2026-05-04 13:32:08 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=3, logCount=10
+2026-05-04 13:32:16 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=dltkdgur, roomCount=1
+2026-05-04 13:32:18 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur, memberCount=2
+2026-05-04 13:32:18 INFO  [pool-1-thread-1] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur
+2026-05-04 13:32:18 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, fromUser=3, toUser=dltkdgur
+2026-05-04 13:32:18 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur
+2026-05-04 13:32:18 INFO  [pool-1-thread-1] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur
+2026-05-04 13:32:18 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur, logCount=10
+2026-05-04 13:32:24 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=YjNPjg70gz1yMi//:x2bCHdZsCG7RsX/Z5BIPJi6Cam8=
+2026-05-04 13:32:30 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 방 나가기 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=3, memberCount=1
+2026-05-04 13:32:32 INFO  [pool-1-thread-3] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=3, roomCount=1
+2026-05-04 13:32:34 INFO  [pool-1-thread-3] c.p.server.service.PublicKeyService - 공개키 제거 완료. userId=3
+2026-05-04 13:32:34 INFO  [pool-1-thread-3] c.p.server.service.ServerAuthService - 로그아웃 처리. userId=3
+2026-05-04 13:32:34 INFO  [pool-1-thread-3] c.p.s.service.ServerHandshakeService - 핸드셰이크 세션 제거 완료. userId=3
+2026-05-04 13:32:34 INFO  [pool-1-thread-3] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-04 13:32:34 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=김민혁
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.server.service.ServerAuthService - 로그인 성공. userId=김민혁
+2026-05-04 13:32:39 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=김민혁
+2026-05-04 13:32:39 INFO  [main] c.p.c.service.ClientHandshakeService - Cipher Suite 협상 요청 전송. userId=김민혁, supported=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.s.service.ServerHandshakeService - Cipher Suite 협상 완료. userId=김민혁, selected=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.s.service.ServerHandshakeService - 서버 ECDH shared secret 생성 완료. 구조=S_PRI + C_PUB, userId=김민혁
+2026-05-04 13:32:39 INFO  [main] c.p.c.service.ClientHandshakeService - 클라이언트 ECDH shared secret 생성 완료. 구조=C_PRI + S_PUB, userId=김민혁
+2026-05-04 13:32:39 INFO  [main] c.p.c.service.ClientHandshakeService - SEED 생성 완료. userId=김민혁
+2026-05-04 13:32:39 INFO  [main] c.p.c.service.ClientHandshakeService - E(SEED) 전송 완료. userId=김민혁
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.s.service.ServerHandshakeService - SEED 복호화 완료. userId=김민혁
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.s.service.ServerHandshakeService - SecretKey 유도 완료. userId=김민혁, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 13:32:39 INFO  [pool-1-thread-4] c.p.s.service.ServerHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=김민혁, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:39 INFO  [main] c.p.c.service.ClientHandshakeService - SecretKey 유도 완료. userId=김민혁, algorithm=PBKDF2WithHmacSHA256, iteration=1000
+2026-05-04 13:32:39 INFO  [main] c.p.c.service.ClientHandshakeService - 서버-클라이언트 핸드셰이크 완료. userId=김민혁, cipherSuite=TLS_FAKE_ECDH_AES_GCM_SHA256
+2026-05-04 13:32:42 INFO  [pool-1-thread-4] c.p.server.service.ServerRoomService - 채팅방 목록 요청. userId=김민혁, roomCount=1
+2026-05-04 13:32:45 INFO  [pool-1-thread-4] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=김민혁, memberCount=2
+2026-05-04 13:32:45 INFO  [pool-1-thread-4] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=김민혁
+2026-05-04 13:32:45 INFO  [pool-1-thread-4] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, fromUser=dltkdgur, toUser=김민혁
+2026-05-04 13:32:45 INFO  [pool-1-thread-4] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=김민혁
+2026-05-04 13:32:45 INFO  [pool-1-thread-4] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=김민혁
+2026-05-04 13:32:45 INFO  [pool-1-thread-4] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=김민혁, logCount=11
+2026-05-04 13:32:49 INFO  [pool-1-thread-4] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=김민혁, data=2sul096CrKv+YP3g:Vncx9mJPIVovy41xsn0HYITL
+2026-05-04 13:32:56 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - [서버가 받은 암호문] roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, sender=dltkdgur, data=GoZ/CDX2nWZvC6H/:BLLX3Bvm6MFBWiuj042fM8BRa71nmg==
+2026-05-04 13:33:05 INFO  [pool-1-thread-1] c.p.s.repository.ChatLogRepository - 방 폭파로 대화내역 삭제 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80
+2026-05-04 13:33:05 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 폭파 완료. roomId=5b7310a1-7d19-45ab-9175-4af5d79d4b80, userId=dltkdgur
+2026-05-04 13:33:07 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 공개키 제거 완료. userId=dltkdgur
+2026-05-04 13:33:07 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 로그아웃 처리. userId=dltkdgur
+2026-05-04 13:33:07 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - 핸드셰이크 세션 제거 완료. userId=dltkdgur
+2026-05-04 13:33:07 INFO  [pool-1-thread-1] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-04 13:33:07 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 13:33:11 INFO  [pool-1-thread-4] c.p.server.service.PublicKeyService - 공개키 제거 완료. userId=김민혁
+2026-05-04 13:33:11 INFO  [pool-1-thread-4] c.p.server.service.ServerAuthService - 로그아웃 처리. userId=김민혁
+2026-05-04 13:33:11 INFO  [pool-1-thread-4] c.p.s.service.ServerHandshakeService - 핸드셰이크 세션 제거 완료. userId=김민혁
+2026-05-04 13:33:11 INFO  [pool-1-thread-4] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-04 13:33:11 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-04 22:51:24 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 23:08:26 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 23:13:00 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 23:15:35 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 23:46:38 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-04 23:57:41 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000

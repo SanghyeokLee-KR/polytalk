@@ -1,0 +1,1773 @@
+2026-05-05 00:06:13 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:15:14 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:17:37 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:22:33 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:28:03 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:34:46 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:35:05 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 00:35:08 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 00:39:16 INFO  [pool-1-thread-1] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 1
+2026-05-05 00:39:16 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 회원가입 처리. userId=1, success=true
+2026-05-05 00:39:16 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=1, success=true
+2026-05-05 00:39:26 INFO  [pool-1-thread-2] c.p.s.repository.MemberRepository - 회원정보 저장 완료: 2
+2026-05-05 00:39:26 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 회원가입 처리. userId=2, success=true
+2026-05-05 00:39:26 INFO  [main] c.p.client.service.ClientAuthService - 회원가입 응답 수신. userId=2, success=true
+2026-05-05 00:39:33 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=2
+2026-05-05 00:39:33 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 로그인 성공. userId=2
+2026-05-05 00:39:33 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=2
+2026-05-05 00:39:38 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=1
+2026-05-05 00:39:38 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 로그인 성공. userId=1
+2026-05-05 00:39:38 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=1
+2026-05-05 00:39:41 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1, logCount=0
+2026-05-05 00:39:41 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 생성 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, roomName=1, owner=1
+2026-05-05 00:39:44 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 전송. userId=2, roomCount=1
+2026-05-05 00:39:45 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=2
+2026-05-05 00:39:45 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, fromUser=1, toUser=2
+2026-05-05 00:39:45 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=2
+2026-05-05 00:39:45 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=2
+2026-05-05 00:39:45 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=2, logCount=0
+2026-05-05 00:39:45 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=2, memberCount=2
+2026-05-05 00:39:47 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - 채팅 수신. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, sender=2
+2026-05-05 00:39:50 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - 채팅 수신. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, sender=1
+2026-05-05 00:39:54 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 나가기 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=2, memberCount=1
+2026-05-05 00:39:58 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 전송. userId=2, roomCount=1
+2026-05-05 00:40:02 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 나가기 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1, memberCount=0
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.RoomConsoleUI.printRoomMenu(RoomConsoleUI.java:24)
+	at com.polytalk.client.controller.RoomFlowController.run(RoomFlowController.java:27)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:44)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:53 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientA.main(ClientA.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.RoomConsoleUI.printRoomMenu(RoomConsoleUI.java:24)
+	at com.polytalk.client.controller.RoomFlowController.run(RoomFlowController.java:27)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:44)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:49:54 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:14)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:5)
+2026-05-05 00:50:09 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 00:50:13 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 00:50:19 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:10:40 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:10:40 INFO  [pool-1-thread-4] com.polytalk.server.ClientHandler - 클라이언트 연결 종료
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:10:42 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:601)
+	at java.base/sun.nio.ch.Net.connect(Net.java:590)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:324)
+	at com.polytalk.client.network.SocketClient.<init>(SocketClient.java:18)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:27)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:31:23 INFO  [main] com.polytalk.server.ChatServer - PolyTalk 서버 시작. port=5000
+2026-05-05 01:31:35 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:31:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:31:47 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=1
+2026-05-05 01:31:47 INFO  [pool-1-thread-1] c.p.server.service.ServerAuthService - 로그인 성공. userId=1
+2026-05-05 01:31:47 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=1
+2026-05-05 01:31:47 INFO  [pool-1-thread-1] c.p.s.service.ServerHandshakeService - [Handshake] 보안 세션 수립 완료 및 SEED 전송. userId=1
+2026-05-05 01:31:52 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 공개키 저장 완료. userId=2
+2026-05-05 01:31:52 INFO  [pool-1-thread-2] c.p.server.service.ServerAuthService - 로그인 성공. userId=2
+2026-05-05 01:31:52 INFO  [main] c.p.client.service.ClientAuthService - 로그인 성공. userId=2
+2026-05-05 01:31:52 INFO  [pool-1-thread-2] c.p.s.service.ServerHandshakeService - [Handshake] 보안 세션 수립 완료 및 SEED 전송. userId=2
+2026-05-05 01:31:57 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=1, logCount=0
+2026-05-05 01:31:57 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 생성 완료. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, roomName=2, owner=1
+2026-05-05 01:31:59 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅방 목록 전송. userId=2, roomCount=2
+2026-05-05 01:32:01 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=2
+2026-05-05 01:32:01 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 기존 멤버 공개키 전송. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, fromUser=1, toUser=2
+2026-05-05 01:32:01 INFO  [pool-1-thread-2] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=2
+2026-05-05 01:32:01 INFO  [pool-1-thread-2] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=2
+2026-05-05 01:32:01 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=2, logCount=0
+2026-05-05 01:32:01 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=2, memberCount=2
+2026-05-05 01:32:06 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=1
+2026-05-05 01:32:08 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=2
+2026-05-05 01:32:22 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=1
+2026-05-05 01:32:24 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=1
+2026-05-05 01:32:26 INFO  [pool-1-thread-1] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=1
+2026-05-05 01:32:27 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=2
+2026-05-05 01:32:27 INFO  [pool-1-thread-2] c.p.server.service.ServerChatService - 채팅 수신. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, sender=2
+2026-05-05 01:32:30 INFO  [pool-1-thread-2] c.p.s.repository.ChatLogRepository - 대화내역 삭제 완료. roomId=0afacd26-54de-46e3-ad0f-814446ea438a
+2026-05-05 01:32:30 INFO  [pool-1-thread-2] c.p.server.service.ServerRoomService - 방 폭파 완료. roomId=0afacd26-54de-46e3-ad0f-814446ea438a, userId=2
+2026-05-05 01:32:35 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅방 목록 전송. userId=1, roomCount=1
+2026-05-05 01:32:37 INFO  [pool-1-thread-1] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 시작. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1
+2026-05-05 01:32:37 INFO  [pool-1-thread-1] c.p.server.service.PublicKeyService - 방 새 멤버 공개키 브로드캐스트. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1
+2026-05-05 01:32:37 INFO  [pool-1-thread-1] c.p.s.service.RoomKeyExchangeService - 방 공개키 교환 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1
+2026-05-05 01:32:37 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 채팅 히스토리 전송. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1, logCount=2
+2026-05-05 01:32:37 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 입장 성공. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1, memberCount=1
+2026-05-05 01:32:39 INFO  [pool-1-thread-1] c.p.s.repository.ChatLogRepository - 대화내역 삭제 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d
+2026-05-05 01:32:39 INFO  [pool-1-thread-1] c.p.server.service.ServerRoomService - 방 폭파 완료. roomId=92b4dc00-bd49-46e3-bbb8-0771a66d4b3d, userId=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.RoomConsoleUI.printRoomMenu(RoomConsoleUI.java:24)
+	at com.polytalk.client.controller.RoomFlowController.run(RoomFlowController.java:33)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:44)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=2
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientB.main(ClientB.java:8)
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.RoomConsoleUI.printRoomMenu(RoomConsoleUI.java:24)
+	at com.polytalk.client.controller.RoomFlowController.run(RoomFlowController.java:33)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:44)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)
+2026-05-05 01:33:36 INFO  [main] com.polytalk.server.ChatServer - 클라이언트 접속. 현재 접속 수=1
+2026-05-05 01:33:36 ERROR [main] com.polytalk.client.ClientApp - 클라이언트 실행 중 오류 발생
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at com.polytalk.client.ui.ConsoleUI.input(ConsoleUI.java:11)
+	at com.polytalk.client.ui.AuthConsoleUI.printMainMenu(AuthConsoleUI.java:19)
+	at com.polytalk.client.controller.AuthFlowController.run(AuthFlowController.java:26)
+	at com.polytalk.client.ClientApp.start(ClientApp.java:37)
+	at com.polytalk.client.ClientA.main(ClientA.java:8)

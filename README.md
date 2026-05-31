@@ -8,7 +8,7 @@
 ![BCrypt](https://img.shields.io/badge/BCrypt-password_hash-555555)
 ![JUnit5](https://img.shields.io/badge/JUnit-5-25A162?logo=junit5&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue)
-![tests](https://img.shields.io/badge/tests-14_passed-2ea44f)
+[![CI](https://github.com/SanghyeokLee-KR/polytalk/actions/workflows/ci.yml/badge.svg)](https://github.com/SanghyeokLee-KR/polytalk/actions/workflows/ci.yml)
 
 > 광명융합기술교육원 자바 심화 과제 · 종단간 암호화(E2EE) · **서버는 암호문만 중계한다**
 

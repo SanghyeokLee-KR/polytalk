@@ -27,9 +27,9 @@ public class EcdhUtil {
         // ECDH 방식으로 키 합의 시작
         KeyAgreement keyAgreement = KeyAgreement.getInstance("ECDH");
         keyAgreement.init(myPrivateKey); // 내 개인키 넣고
-        keyAgreement.doPhase(otherPublicKey, true); // 상대방 공개키랑 섞기
+        keyAgreement.doPhase(otherPublicKey, true); // 상대방 공개키와 결합 (키 합의)
 
-        // 섞어서 나온 결과물(비밀값) 반환
+        // 합의로 도출된 공유 비밀값 반환
         return keyAgreement.generateSecret();
     }
 

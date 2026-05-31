@@ -21,7 +21,7 @@ public class ChatRoomRepository {
     private final ObjectMapper mapper = new ObjectMapper();
 
     /**
-     * 방 정보 저장 (동시에 여러 명이 방 만들 때 꼬이지 않게 싱크로 나이즈드 사용)
+     * 방 정보 저장 (여러 스레드가 동시에 접근해도 손상되지 않도록 synchronized 사용)
      */
     public synchronized void save(ChatRoom room) {
         try {

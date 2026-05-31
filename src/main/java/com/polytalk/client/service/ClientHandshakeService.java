@@ -25,7 +25,7 @@ public class ClientHandshakeService {
 
     public void handshake(ClientState state) throws Exception {
 
-        // 일단 내 공개키랑 지원하는 알고리즘 묶어서 서버로 던짐
+        // 내 공개키와 지원 알고리즘 목록을 묶어 서버로 전송한다
         String pub = KeyUtil.publicKeyToBase64(state.getKeyPair().getPublic());
         String suites = String.join(",", CipherSuite.supportedNames());
 
@@ -34,21 +34,21 @@ public class ClientHandshakeService {
                 .data(suites + "::" + pub)
                 .build());
 
-        // 서버 응답 대기 (이전엔 핑퐁 2번 했는데, 최적화해서 한 방에 다 받아옴)
+        // 서버 응답 대기 (1-RTT: 알고리즘·공개키·SEED를 한 번에 수신)
         Message res = reader.readUntil(state, MessageType.CIPHER_SUITE_RESPONSE);
 
         // 프로토콜 규격: [알고리즘 :: 서버 공개키 :: 암호화된 SEED]
         String[] parts = res.getData().split("::");
 
         if (parts.length != 3) {
-            throw new IllegalStateException("서버 응답 형식이 이상함. 구분자(::) 확인 필요.");
+            throw new IllegalStateException("서버 응답 형식이 올바르지 않습니다. 구분자(::)를 확인하세요.");
         }
 
         String selectedSuite = parts[0];
         PublicKey serverKey = KeyUtil.base64ToPublicKey(parts[1]);
         String encryptedSeed = parts[2];
 
-        // 내 개인키(C_PRI) + 서버 공개키(S_PUB) 섞어서 임시 공유키(SHARED_SECRET) 만들기
+        // 내 개인키(C_PRI)와 서버 공개키(S_PUB)로 임시 공유키(SHARED_SECRET)를 계산한다
         SecretKey shared = EcdhUtil.generateSecretKey(
                 state.getKeyPair().getPrivate(),
                 serverKey
@@ -57,7 +57,7 @@ public class ClientHandshakeService {
         // 서버가 보낸 E(SEED)를 방금 만든 공유키로 복호화해서 SEED 획득
         byte[] seed = AesGcmUtil.decryptToBytes(encryptedSeed, shared);
 
-        // 획득한 SEED를 PBKDF2로 1000번 꼬아서 최종 AES 키 도출
+        // 획득한 SEED를 PBKDF2로 1000회 반복 유도해 최종 AES 키를 만든다
         SecretKey finalKey = KeyDerivationUtil.deriveAesKey(seed, 1000);
 
         // 보안 세션 준비 완료. 상태값에 저장해둠.

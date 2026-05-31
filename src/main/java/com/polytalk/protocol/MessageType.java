@@ -19,10 +19,6 @@ public enum MessageType {
     CIPHER_SUITE_RESPONSE, // 암호화 방식 결정 응답
     CIPHER_SUITE_FAIL,     // 보안 협상 실패
 
-    SEED_EXCHANGE,      // 시드 교환
-    HANDSHAKE_SUCCESS,  // 보안 연결 성공
-    HANDSHAKE_FAIL,     // 보안 연결 실패
-
     PUBLIC_KEY,         // 공개키 전달
 
     // --- 채팅방 관리 ---

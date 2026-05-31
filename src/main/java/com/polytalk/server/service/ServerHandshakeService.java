@@ -14,9 +14,10 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 서버 측 핸드셰이크 처리
+ * 서버 측 핸드셰이크 처리.
  *
- * TODO: 다이어그램 다시 보고 로직 수정함
+ * 1-RTT 핸드셰이크 방식이다. 클라이언트의 CIPHER_SUITE_REQUEST 한 번으로
+ * 알고리즘 협상, SEED 생성, 세션 키 유도를 마치고 CIPHER_SUITE_RESPONSE로 응답한다.
  */
 @Slf4j
 public class ServerHandshakeService implements HandshakeService {
@@ -40,7 +41,7 @@ public class ServerHandshakeService implements HandshakeService {
             String supported = parts[0];
             String clientPub = parts[1];
 
-            // 일단 첫 번째 알고리즘으로 픽스 (나중에 고도화할 때 로직 빼기)
+            // 지원 목록의 첫 번째 알고리즘을 선택한다 (협상 로직 확장 지점)
             CipherSuite suite = select(supported);
             if (suite == null) {
                 sendFail(sender, MessageType.CIPHER_SUITE_FAIL);
@@ -56,12 +57,11 @@ public class ServerHandshakeService implements HandshakeService {
                     serverKey.getPrivate(), clientKey
             );
 
-            // !! 다이어그램 요구사항 반영 !!
-            // 서버가 주도적으로 랜덤 SEED를 뽑고, 임시 공유키로 암호화함 E(SEED)
+            // 서버가 랜덤 SEED를 생성하고 임시 공유키로 암호화한다 -> E(SEED)
             byte[] seed = SeedUtil.generateSeed();
             String encryptedSeed = AesGcmUtil.encrypt(seed, shared);
 
-            // 서버는 방금 뽑은 SEED로 바로 최종 AES 키 유도해버림
+            // 서버는 생성한 SEED로 최종 AES 키를 유도한다
             SecretKey finalKey = KeyDerivationUtil.deriveAesKey(seed, ITERATION);
 
             // 세션 객체에 최종 키 저장해두고 완료 처리
@@ -70,7 +70,7 @@ public class ServerHandshakeService implements HandshakeService {
             session.completed = true;
             sessions.put(sender, session);
 
-            // 클라이언트한테 [알고리즘 :: S_PUB :: E(SEED)] 한 방에 내려줌
+            // 클라이언트에 [알고리즘 :: S_PUB :: E(SEED)]를 한 번에 전달한다
             String serverPubBase64 = KeyUtil.publicKeyToBase64(serverKey.getPublic());
             String responseData = suite.getName() + "::" + serverPubBase64 + "::" + encryptedSeed;
 
@@ -84,16 +84,9 @@ public class ServerHandshakeService implements HandshakeService {
             log.info("[Handshake] 보안 세션 수립 완료 및 SEED 전송. userId={}", sender.getUserId());
 
         } catch (Exception e) {
-            log.error("핸드셰이크 터짐", e);
+            log.error("핸드셰이크 처리 실패", e);
             sendFail(sender, MessageType.CIPHER_SUITE_FAIL);
         }
-    }
-
-    @Override
-    public void receiveEncryptedSeed(Message msg, ClientHandler sender) {
-        // 서버가 SEED를 직접 내려주도록 구조를 바꿨기 때문에 이 메서드는 이제 탈 일 없음.
-        // 인터페이스 땜에 냅두고 혹시 몰라서 로그만 찍어둠
-        log.warn("잘못된 접근: 현재 프로토콜에서는 클라이언트가 SEED를 보내지 않음.");
     }
 
     @Override

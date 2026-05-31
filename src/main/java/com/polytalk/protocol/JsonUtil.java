@@ -20,7 +20,7 @@ public class JsonUtil {
         }
     }
 
-    // 현재 Message, User, Room 대충 다 처리
+    // 제네릭 타입(clazz)으로 Message, 도메인 객체 등 어떤 클래스든 역직렬화
     public static <T> T fromJson(String json, Class<T> clazz) {
         try {
             // clazz 매개변수를 통해 런타임에 어떤 객체로 만들지 결정

@@ -54,10 +54,6 @@ public class ServerMessageRouter {
                     handshakeService.negotiateCipherSuite(msg, sender);
                     break;
 
-                case SEED_EXCHANGE: // 암호화 키(시드) 교환
-                    handshakeService.receiveEncryptedSeed(msg, sender);
-                    break;
-
                 case ROOM_LIST: // 전체 채팅방 목록 요청
                     roomService.sendRoomList(sender);
                     break;

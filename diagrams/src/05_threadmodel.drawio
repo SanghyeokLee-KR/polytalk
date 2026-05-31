@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="5. 스레드 모델" id="polytalk-threads">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1200" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="런타임 스레드 모델 — 멀티스레드 서버 · 입출력 분리 클라이언트">
+          <mxGeometry height="24" width="900" x="40" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="srv" parent="1" vertex="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D05C17;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#D05C17;fontStyle=1;" value="Chat Server 프로세스">
+          <mxGeometry height="420" width="520" x="56" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="main" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FBE9D9;strokeColor=#D05C17;fontColor=#8A4011;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;MainThread&lt;/b&gt; — &lt;font face=&quot;Courier New&quot;&gt;ServerSocket(:5000).accept()&lt;/font&gt;">
+          <mxGeometry height="46" width="476" x="78" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="pool" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;FixedThreadPool(10)&lt;/font&gt;">
+          <mxGeometry height="40" width="476" x="78" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;&lt;font color=&quot;#8A4011&quot;&gt;ClientHandler #1&lt;/font&gt;&lt;/b&gt; (thread)&lt;br&gt;&lt;font color=&quot;#6B7785&quot;&gt;readLine() 루프&lt;br&gt;→ ServerMessageRouter&lt;/font&gt;">
+          <mxGeometry height="92" width="222" x="78" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;&lt;font color=&quot;#8A4011&quot;&gt;ClientHandler #2&lt;/font&gt;&lt;/b&gt; (thread)&lt;br&gt;&lt;font color=&quot;#6B7785&quot;&gt;클라이언트별 독립 스레드&lt;br&gt;ClientManager가 관리&lt;/font&gt;">
+          <mxGeometry height="92" width="222" x="332" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="dots" parent="1" vertex="1" style="text;html=1;align=center;fontSize=16;fontColor=#B0BAC4;fontStyle=1;" value="· · ·  #N (최대 10)">
+          <mxGeometry height="24" width="476" x="78" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="se1" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;" source="main" target="pool" value="submit"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="se2" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;exitX=0.35;exitY=1;entryX=0.5;entryY=0;" source="pool" target="h1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="se3" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;exitX=0.65;exitY=1;entryX=0.5;entryY=0;" source="pool" target="h2"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="cli" parent="1" vertex="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1565C0;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#1565C0;fontStyle=1;" value="Client 프로세스">
+          <mxGeometry height="420" width="480" x="664" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="ui" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;fontColor=#15366B;fontSize=11;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;Main (UI) Thread&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#6B7785&quot;&gt;ConsoleUI 입력 → MessageSender&lt;/font&gt;">
+          <mxGeometry height="62" width="436" x="686" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sock" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot; color=&quot;#1565C0&quot;&gt;SocketClient&lt;/font&gt;&lt;/b&gt; — 공유 소켓 (양방향)">
+          <mxGeometry height="44" width="436" x="686" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="recv" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;fontColor=#15366B;fontSize=11;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;MessageReceiver Thread&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#6B7785&quot;&gt;ServerResponseReader → 화면 출력&lt;/font&gt;">
+          <mxGeometry height="62" width="436" x="686" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="ce1" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#1565C0;strokeWidth=1.25;endArrow=block;exitX=0.3;exitY=1;entryX=0.3;entryY=0;fontColor=#15366B;fontSize=10;" source="ui" target="sock" value="송신"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ce2" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#1565C0;strokeWidth=1.25;endArrow=block;exitX=0.7;exitY=1;entryX=0.7;entryY=0;fontColor=#15366B;fontSize=10;" source="sock" target="recv" value="수신"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="link" parent="1" edge="1" style="html=1;rounded=0;strokeColor=#1F2A37;strokeWidth=2;startArrow=classic;startFill=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontColor=#334155;fontSize=10;" source="srv" target="sock" value="TCP socket :5000"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="note" parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fillColor=#FFF8E1;strokeColor=#D6B656;fontColor=#5A4A00;fontSize=11;align=left;spacingLeft=10;verticalAlign=middle;" value="입력과 수신을 다른 스레드로 분리해, 블로킹 readLine()으로 메시지를 기다리는 중에도 사용자는 입력을 계속할 수 있다. 서버는 핸들러를 풀로 관리해 다수 접속을 동시에 처리한다.">
+          <mxGeometry height="52" width="1088" x="56" y="528" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="4. AES-GCM" id="polytalk-aesgcm">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1160" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="AES-GCM 메시지 암호화 — AEAD (기밀성 + 무결성)">
+          <mxGeometry height="24" width="900" x="40" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="encl" parent="1" vertex="1" style="text;html=1;align=left;fontSize=11;fontStyle=1;fontColor=#64748B;" value="암호화">
+          <mxGeometry height="18" width="200" x="44" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="pt" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FDECEA;strokeColor=#C62828;fontColor=#922B21;fontSize=11;verticalAlign=middle;align=center;" value="Plaintext">
+          <mxGeometry height="40" width="200" x="44" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="key" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;fontColor=#15366B;fontSize=11;verticalAlign=middle;align=center;" value="Secret Key (Peer / 세션)">
+          <mxGeometry height="40" width="200" x="44" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="iv" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=middle;align=center;" value="IV · 12-byte nonce">
+          <mxGeometry height="40" width="200" x="44" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="gcm" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F3ECFA;strokeColor=#6A1B9A;fontColor=#4A148C;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;AES-128-GCM&lt;/b&gt;&lt;br&gt;&lt;br&gt;CTR 모드 암호화&lt;br&gt;GHASH → 인증 태그">
+          <mxGeometry height="120" width="200" x="380" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="out" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#DFF3D8;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=11;verticalAlign=middle;align=center;" value="Ciphertext + Tag (128b)">
+          <mxGeometry height="40" width="240" x="700" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pkt" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#EBF5E9;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=10;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;Base64(IV) : Base64(Ct+Tag)&lt;/font&gt;&lt;br&gt;콜론으로 결합해 전송·저장">
+          <mxGeometry height="52" width="280" x="680" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.25;" source="pt" target="gcm"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a2" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.55;" source="key" target="gcm"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a3" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.85;" source="iv" target="gcm"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a4" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2E7D32;strokeWidth=1.5;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="gcm" target="out"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a5" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2E7D32;strokeWidth=1.5;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="out" target="pkt"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="decl" parent="1" vertex="1" style="text;html=1;align=left;fontSize=11;fontStyle=1;fontColor=#64748B;" value="복호화 — 태그 검증 동반">
+          <mxGeometry height="18" width="300" x="44" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="rpkt" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#52606D;fontSize=10;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;split(&amp;quot;:&amp;quot;)&lt;/font&gt; → IV, Ct+Tag">
+          <mxGeometry height="44" width="240" x="44" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="gcm2" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F3ECFA;strokeColor=#6A1B9A;fontColor=#4A148C;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;AES-128-GCM 복호화&lt;/b&gt;&lt;br&gt;+ 인증 태그 검증">
+          <mxGeometry height="80" width="200" x="380" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="ok" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#DFF3D8;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=11;verticalAlign=middle;align=center;" value="검증 성공 → 평문 복원">
+          <mxGeometry height="40" width="260" x="700" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="fail" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FDECEA;strokeColor=#C62828;fontColor=#922B21;fontSize=11;verticalAlign=middle;align=center;" value="검증 실패 → 복호화 거부 (변조 탐지)">
+          <mxGeometry height="40" width="260" x="700" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="rpkt" target="gcm2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="b2" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2E7D32;strokeWidth=1.5;endArrow=block;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" source="gcm2" target="ok"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="b3" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#C62828;strokeWidth=1.5;dashed=1;endArrow=block;exitX=1;exitY=0.65;entryX=0;entryY=0.5;" source="gcm2" target="fail"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="note" parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fillColor=#FFF8E1;strokeColor=#D6B656;fontColor=#5A4A00;fontSize=11;align=left;spacingLeft=10;verticalAlign=middle;" value="GCM은 AEAD — 암호화와 무결성 검증을 동시에 수행한다. IV가 매번 달라 같은 평문도 다른 암호문이 되고, 한 비트라도 변조되면 태그 검증 실패로 복호화가 차단된다.">
+          <mxGeometry height="56" width="916" x="44" y="496" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -6,10 +6,7 @@ build/
 .kotlin
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -41,3 +38,14 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### PolyTalk 런타임 산출물 ###
+# 서버가 런타임에 생성하는 JSON 데이터 저장소
+data/
+# 클라이언트 로컬 키 저장소 (개인키 포함 — 절대 커밋 금지)
+client_keys/
+# 로그 출력
+logs/
+# 키스토어 및 키 파일
+*.jks
+*.key

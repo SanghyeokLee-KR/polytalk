@@ -53,8 +53,6 @@ PolyTalk는 **"서버는 암호문만 중계하고, 실제 메시지 내용은 �
 - 채팅방에 입장하면 서버가 두 클라이언트의 공개키를 중계하고, 각자 상대 공개키와 자기 개인키로 **동일한 Peer 키**를 계산한다(ECDH).
 - 메시지는 **AES-128-GCM**으로 암호화되어 서버를 거쳐 상대에게 전달된다. 서버는 Peer 키가 없으므로 평문을 복호화할 수 없다.
 
-**기술 스택** — Java 21 · Gradle · Java Socket(TCP) · 멀티스레드 · ECDH · AES-128-GCM · PBKDF2 · BCrypt · Jackson · SLF4J/Logback · JUnit 5
-
 ---
 
 ## 2. 기술 스택

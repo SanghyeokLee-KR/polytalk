@@ -83,8 +83,8 @@ polytalk/
 │   ├── src/                      # draw.io 원본 (편집 가능)
 │   └── png/                      # export 이미지
 └── src/main/java/com/polytalk/
-    ├── client/                   # 클라이언트 — ui · controller · service · network · state · factory
-    ├── server/                   # 서버 — ChatServer · ClientHandler · ServerMessageRouter · ClientManager · service · repository · factory
+    ├── client/                   # 클라이언트 · ui · controller · service · network · state · factory
+    ├── server/                   # 서버 · ChatServer · ClientHandler · ServerMessageRouter · ClientManager · service · repository · factory
     ├── controller/ · service/    # MemberController · MemberService (회원가입·로그인)
     ├── crypto/                   # AesGcmUtil · EcdhUtil · KeyDerivationUtil · SeedUtil · KeyUtil · KeyStoreUtil · PasswordUtil · FingerprintUtil · CipherSuite
     ├── domain/                   # Member · ChatRoom · ChatLog
@@ -165,7 +165,7 @@ DBMS 대신 JSON 파일로 회원·채팅방·채팅 로그를 영속화합니�
 
 ```bash
 ./gradlew test
-# BUILD SUCCESSFUL — 14 tests passed
+# BUILD SUCCESSFUL · 14 tests passed
 ```
 
 ---

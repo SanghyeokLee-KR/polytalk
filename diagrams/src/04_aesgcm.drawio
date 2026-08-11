@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="AES-GCM 메시지 암호화 — AEAD (기밀성 + 무결성)">
+        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="AES-GCM 메시지 암호화: AEAD (기밀성 + 무결성)">
           <mxGeometry height="24" width="900" x="40" y="26" as="geometry" />
         </mxCell>
 
@@ -35,7 +35,7 @@
         <mxCell id="a4" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2E7D32;strokeWidth=1.5;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="gcm" target="out"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="a5" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2E7D32;strokeWidth=1.5;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="out" target="pkt"><mxGeometry relative="1" as="geometry" /></mxCell>
 
-        <mxCell id="decl" parent="1" vertex="1" style="text;html=1;align=left;fontSize=11;fontStyle=1;fontColor=#64748B;" value="복호화 — 태그 검증 동반">
+        <mxCell id="decl" parent="1" vertex="1" style="text;html=1;align=left;fontSize=11;fontStyle=1;fontColor=#64748B;" value="복호화: 태그 검증 동반">
           <mxGeometry height="18" width="300" x="44" y="338" as="geometry" />
         </mxCell>
         <mxCell id="rpkt" parent="1" vertex="1" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#52606D;fontSize=10;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;split(&amp;quot;:&amp;quot;)&lt;/font&gt; → IV, Ct+Tag">
@@ -54,7 +54,7 @@
         <mxCell id="b2" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2E7D32;strokeWidth=1.5;endArrow=block;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" source="gcm2" target="ok"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="b3" parent="1" edge="1" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#C62828;strokeWidth=1.5;dashed=1;endArrow=block;exitX=1;exitY=0.65;entryX=0;entryY=0.5;" source="gcm2" target="fail"><mxGeometry relative="1" as="geometry" /></mxCell>
 
-        <mxCell id="note" parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fillColor=#FFF8E1;strokeColor=#D6B656;fontColor=#5A4A00;fontSize=11;align=left;spacingLeft=10;verticalAlign=middle;" value="GCM은 AEAD — 암호화와 무결성 검증을 동시에 수행한다. IV가 매번 달라 같은 평문도 다른 암호문이 되고, 한 비트라도 변조되면 태그 검증 실패로 복호화가 차단된다.">
+        <mxCell id="note" parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fillColor=#FFF8E1;strokeColor=#D6B656;fontColor=#5A4A00;fontSize=11;align=left;spacingLeft=10;verticalAlign=middle;" value="GCM은 AEAD: 암호화와 무결성 검증을 동시에 수행한다. IV가 매번 달라 같은 평문도 다른 암호문이 되고, 한 비트라도 변조되면 태그 검증 실패로 복호화가 차단된다.">
           <mxGeometry height="56" width="916" x="44" y="496" as="geometry" />
         </mxCell>
       </root>

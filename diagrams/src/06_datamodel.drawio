@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="데이터 모델 (ERD) — JSON 파일 영속화">
+        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="데이터 모델 (ERD): JSON 파일 영속화">
           <mxGeometry height="24" width="800" x="40" y="26" as="geometry" />
         </mxCell>
 
@@ -32,7 +32,7 @@
         <mxCell id="r1" parent="1" edge="1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeColor=#5F5E5A;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontColor=#2C2C2A;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" source="member" target="log" value="sends (1:N)"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="r2" parent="1" edge="1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeColor=#5F5E5A;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontColor=#2C2C2A;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" source="room" target="log" value="contains (1:N)"><mxGeometry relative="1" as="geometry" /></mxCell>
 
-        <mxCell id="json" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;align=left;spacingLeft=14;verticalAlign=middle;" value="JSON 영속화 — &lt;font face=&quot;Courier New&quot;&gt;Member→members.json · ChatRoom→chat_rooms.json · ChatLog→chat_logs.json&lt;/font&gt;">
+        <mxCell id="json" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;align=left;spacingLeft=14;verticalAlign=middle;" value="JSON 영속화: &lt;font face=&quot;Courier New&quot;&gt;Member→members.json · ChatRoom→chat_rooms.json · ChatLog→chat_logs.json&lt;/font&gt;">
           <mxGeometry height="40" width="920" x="80" y="476" as="geometry" />
         </mxCell>
         <mxCell id="lg" parent="1" vertex="1" style="text;html=1;align=left;fontSize=10;fontColor=#94A3B8;" value="(PK) 기본키 · (FK) 외래키 · 크로우풋 = 1:N · 빨강 = 암호문으로만 저장">

@@ -44,7 +44,7 @@
         <mxCell id="eb" parent="1" vertex="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;fontColor=#15366B;fontSize=10;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;AES-GCM&lt;/font&gt; 복호화 (Peer Key) → 평문">
           <mxGeometry height="36" width="250" x="990" y="588" as="geometry" />
         </mxCell>
-        <mxCell id="res" parent="1" vertex="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#DFF3D8;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" value="서버는 Peer 키가 없어 종단 메시지 평문을 알 수 없다 — E2EE">
+        <mxCell id="res" parent="1" vertex="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#DFF3D8;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" value="서버는 Peer 키가 없어 종단 메시지 평문을 알 수 없다: E2EE">
           <mxGeometry height="36" width="1180" x="40" y="646" as="geometry" />
         </mxCell>
       </root>

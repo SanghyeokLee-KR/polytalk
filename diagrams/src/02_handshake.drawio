@@ -26,7 +26,7 @@
         <mxCell id="nc" parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#F3ECFA;strokeColor=#6A1B9A;fontColor=#4A148C;align=left;spacingLeft=10;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;클라이언트 연산&lt;/b&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;ECDH(C_PRI, S_PUB)&lt;/font&gt; → shared (동일)&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;SEED = decrypt(shared, E(SEED))&lt;/font&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;PBKDF2(SEED,1000)&lt;/font&gt; → session key (동일)">
           <mxGeometry height="96" width="320" x="180" y="454" as="geometry" />
         </mxCell>
-        <mxCell id="res" parent="1" vertex="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#DFF3D8;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" value="양측이 동일한 세션 키 보유 — SEED·키는 전송되지 않고 공개키만 교환된다">
+        <mxCell id="res" parent="1" vertex="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#DFF3D8;strokeColor=#2E7D32;fontColor=#1B5E20;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;" value="양측이 동일한 세션 키 보유: SEED·키는 전송되지 않고 공개키만 교환된다">
           <mxGeometry height="38" width="960" x="40" y="604" as="geometry" />
         </mxCell>
       </root>

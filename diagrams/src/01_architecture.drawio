@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="PolyTalk — 런타임 구성과 메시지 흐름">
+        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="PolyTalk: 런타임 구성과 메시지 흐름">
           <mxGeometry height="24" width="700" x="40" y="26" as="geometry" />
         </mxCell>
 
@@ -15,17 +15,17 @@
           <mxGeometry height="58" width="32" x="64" y="486" as="geometry" />
         </mxCell>
 
-        <mxCell id="ca" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#15366B;fontStyle=1;" value="Client A&#160;&#160;&lt;font color=&quot;#5B7CA8&quot; style=&quot;font-size:10px&quot;&gt;«Java»&lt;/font&gt;&lt;div style=&quot;font-weight:normal;font-size:10px;color:#5B6B7B;margin-top:6px;&quot;&gt;ui · controller · service · network&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Peer key · plaintext&lt;/font&gt; — 로컬 전용&lt;/div&gt;">
+        <mxCell id="ca" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#15366B;fontStyle=1;" value="Client A&#160;&#160;&lt;font color=&quot;#5B7CA8&quot; style=&quot;font-size:10px&quot;&gt;«Java»&lt;/font&gt;&lt;div style=&quot;font-weight:normal;font-size:10px;color:#5B6B7B;margin-top:6px;&quot;&gt;ui · controller · service · network&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Peer key · plaintext&lt;/font&gt;: 로컬 전용&lt;/div&gt;">
           <mxGeometry height="92" width="260" x="180" y="142" as="geometry" />
         </mxCell>
-        <mxCell id="cb" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#15366B;fontStyle=1;" value="Client B&#160;&#160;&lt;font color=&quot;#5B7CA8&quot; style=&quot;font-size:10px&quot;&gt;«Java»&lt;/font&gt;&lt;div style=&quot;font-weight:normal;font-size:10px;color:#5B6B7B;margin-top:6px;&quot;&gt;ui · controller · service · network&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Peer key · plaintext&lt;/font&gt; — 로컬 전용&lt;/div&gt;">
+        <mxCell id="cb" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#15366B;fontStyle=1;" value="Client B&#160;&#160;&lt;font color=&quot;#5B7CA8&quot; style=&quot;font-size:10px&quot;&gt;«Java»&lt;/font&gt;&lt;div style=&quot;font-weight:normal;font-size:10px;color:#5B6B7B;margin-top:6px;&quot;&gt;ui · controller · service · network&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Peer key · plaintext&lt;/font&gt;: 로컬 전용&lt;/div&gt;">
           <mxGeometry height="92" width="260" x="180" y="470" as="geometry" />
         </mxCell>
 
         <mxCell id="srv" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FBE9D9;strokeColor=#D05C17;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#8A4011;fontStyle=1;" value="Chat Server&#160;&#160;&lt;font color=&quot;#C08457&quot; style=&quot;font-size:10px&quot;&gt;«ServerSocket :5000»&lt;/font&gt;&lt;div style=&quot;font-weight:normal;font-size:10px;color:#5B6B7B;margin-top:6px;&quot;&gt;ClientHandler · ServerMessageRouter&lt;br&gt;ServerAuth/Room/Chat/Handshake · ClientManager&lt;/div&gt;">
           <mxGeometry height="120" width="280" x="700" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="ctlbl" parent="1" vertex="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#B91C1C;" value="ciphertext only — 복호화 불가">
+        <mxCell id="ctlbl" parent="1" vertex="1" style="text;html=1;align=left;fontSize=11;fontStyle=2;fontColor=#B91C1C;" value="ciphertext only: 복호화 불가">
           <mxGeometry height="18" width="240" x="712" y="408" as="geometry" />
         </mxCell>
         <mxCell id="db" parent="1" vertex="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#FFFFFF;strokeColor=#64748B;fontSize=10;fontColor=#52606D;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;data/&lt;br&gt;*.json&lt;/font&gt;">
@@ -39,7 +39,7 @@
         <mxCell id="f2" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#334155;strokeWidth=1.75;endArrow=classic;startArrow=classic;startFill=1;endFill=1;fontColor=#334155;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" source="cb" target="srv" value="③  ciphertext relay"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="fdb" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#94A3B8;strokeWidth=1.25;endArrow=open;fontColor=#5B6B7B;fontSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="srv" target="db" value="store ciphertext"><mxGeometry relative="1" as="geometry" /></mxCell>
 
-        <mxCell id="e2e" parent="1" edge="1" style="html=1;rounded=1;strokeColor=#0F766E;strokeWidth=2;endArrow=none;dashed=1;dashPattern=8 5;fontColor=#0F766E;fontSize=11;fontStyle=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;curved=1;" source="ca" target="cb" value="end-to-end encrypted — 서버는 평문을 복원할 수 없다">
+        <mxCell id="e2e" parent="1" edge="1" style="html=1;rounded=1;strokeColor=#0F766E;strokeWidth=2;endArrow=none;dashed=1;dashPattern=8 5;fontColor=#0F766E;fontSize=11;fontStyle=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;curved=1;" source="ca" target="cb" value="end-to-end encrypted: 서버는 평문을 복원할 수 없다">
           <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="120" y="354" /></Array></mxGeometry>
         </mxCell>
       </root>

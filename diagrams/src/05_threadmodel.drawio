@@ -4,14 +4,14 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="런타임 스레드 모델 — 멀티스레드 서버 · 입출력 분리 클라이언트">
+        <mxCell id="t" parent="1" vertex="1" style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F2A37;" value="런타임 스레드 모델: 멀티스레드 서버 · 입출력 분리 클라이언트">
           <mxGeometry height="24" width="900" x="40" y="26" as="geometry" />
         </mxCell>
 
         <mxCell id="srv" parent="1" vertex="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D05C17;strokeWidth=1.5;verticalAlign=top;align=left;spacingLeft=12;spacingTop=10;fontSize=12;fontColor=#D05C17;fontStyle=1;" value="Chat Server 프로세스">
           <mxGeometry height="420" width="520" x="56" y="92" as="geometry" />
         </mxCell>
-        <mxCell id="main" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FBE9D9;strokeColor=#D05C17;fontColor=#8A4011;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;MainThread&lt;/b&gt; — &lt;font face=&quot;Courier New&quot;&gt;ServerSocket(:5000).accept()&lt;/font&gt;">
+        <mxCell id="main" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FBE9D9;strokeColor=#D05C17;fontColor=#8A4011;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;MainThread&lt;/b&gt;: &lt;font face=&quot;Courier New&quot;&gt;ServerSocket(:5000).accept()&lt;/font&gt;">
           <mxGeometry height="46" width="476" x="78" y="138" as="geometry" />
         </mxCell>
         <mxCell id="pool" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=middle;align=center;" value="&lt;font face=&quot;Courier New&quot;&gt;FixedThreadPool(10)&lt;/font&gt;">
@@ -36,7 +36,7 @@
         <mxCell id="ui" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;fontColor=#15366B;fontSize=11;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;Main (UI) Thread&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#6B7785&quot;&gt;ConsoleUI 입력 → MessageSender&lt;/font&gt;">
           <mxGeometry height="62" width="436" x="686" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="sock" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot; color=&quot;#1565C0&quot;&gt;SocketClient&lt;/font&gt;&lt;/b&gt; — 공유 소켓 (양방향)">
+        <mxCell id="sock" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontColor=#52606D;fontSize=11;verticalAlign=middle;align=center;" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot; color=&quot;#1565C0&quot;&gt;SocketClient&lt;/font&gt;&lt;/b&gt;: 공유 소켓 (양방향)">
           <mxGeometry height="44" width="436" x="686" y="244" as="geometry" />
         </mxCell>
         <mxCell id="recv" parent="1" vertex="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#EAF1FB;strokeColor=#1565C0;fontColor=#15366B;fontSize=11;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;MessageReceiver Thread&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#6B7785&quot;&gt;ServerResponseReader → 화면 출력&lt;/font&gt;">
